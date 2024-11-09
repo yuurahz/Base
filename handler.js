@@ -543,7 +543,7 @@ ${text}`.trim(),
           let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
           for (let user of participants) {
             let text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc.toString()) : (chat.sBye || this.bye || conn.bye || 'Goodbye, @user!')).replace('@user', '@' + user.split('@')[0])
-            this.reply(id, text, fakes('Group Participants Notification'))
+            this.reply(id, text, null)
           }
         }
     }
