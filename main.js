@@ -129,7 +129,7 @@ const connectionOptions = {
    defaultQueryTimeoutMs: undefined,
   }
   
-  const conn = simple.makeWASocket(connectionOptions)
+  global.conn = simple.makeWASocket(connectionOptions)
   conn.isInit = false	
 	
   if (usePairingCode && !conn.authState.creds.registered) {
