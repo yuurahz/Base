@@ -3,7 +3,7 @@
 ## Introduction
 > Yoshida is a WhatsApp Bot with many multifunctional features, using Baileys For Free
 > - This script is 100% free, which uses the api from [Yoshida-APIs](https://api.yoshida.my.id)
-> - Using the module from [@yoshx/func](https://github.com/YuuraHz/Func)
+> - Using the module from [@yoshx/func](https://www.npmjs.com/package/@yoshx/func)
 
 ## Set in .env
 ```Javascript
